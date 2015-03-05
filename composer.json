@@ -1,5 +1,35 @@
 {
-    "require": {
-        "guzzle/guzzle": "~3.7"
+    "name" : "dutchdrops/dpdParcelShop",
+    "description" : "Endicia",
+    "authors" : [
+    ],
+    "license" : "proprietary",
+    "keywords" : [
+        "DutchDrops",
+        "PHP"
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:dutchdrops/Endicia.git"
+        }
+    ],
+    "require" : {
+        "php" : ">=5.3.3",
+         "guzzle/guzzle": "~3.7"
+
+    },
+    "autoload" : {
+        "classmap" : ["./"],
+        "psr-0" : {
+        }
+    },
+    "scripts" : {
+        "pre-install-cmd" : [],
+        "post-install-cmd" : [],
+        "pre-update-cmd" : [],
+        "post-update-cmd" : [],
+        "pre-autoload-dump" : [],
+        "post-autoload-dump" : []
     }
 }
