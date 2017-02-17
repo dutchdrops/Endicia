@@ -200,7 +200,9 @@ class Endicia
             $return_data['TransactionID'] = (string)$sxe->TransactionID;
             $return_data['PostmarkDate'] = (string)$sxe->PostmarkDate;
             $return_data['DeliveryTimeDays'] = (string)$sxe->PostagePrice->DeliveryTimeDays;
-            return $return_data;
+	    $return_data['error'] = (string)$data;
+            
+		return $return_data;
         } else {
             return array('status' => 'error', 'message' =>  $sxe);
         }
